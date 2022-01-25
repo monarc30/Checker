@@ -1,6 +1,6 @@
-<?php declare(strict_types=1);
+<?php
 
-namespace App;
+namespace App\Operations\Checker;
 
 /**
  * Pangrams, anagrams and palindromes
@@ -19,6 +19,11 @@ class Checker
      */
     public function isPalindrome(string $word) : bool
     {
+        $middleWord = strlen($word) / 2;
+        $firstHalfWord = substr($word, 0, floor($middleWord));
+        $secondHalfWord = substr($word, ceil($middleWord));
+
+        return $firstHalfWord == strrev($secondHalfWord);
     }
     
     /**
@@ -32,6 +37,13 @@ class Checker
      */
     public function isAnagram(string $word, string $comparison) : bool
     {
+        $new_word = preg_replace("/\s+/", "", $word);
+        $new_comparison = preg_replace("/\s+/", "", $comparison);
+        
+        if (count_chars($new_word, 1) == count_chars($new_comparison, 1))
+            return true;
+        else 
+            return false;      
     }
 
     /**
