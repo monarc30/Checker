@@ -1,8 +1,12 @@
-# Instructions
+# Instructions and Installation
+
+## git clone https://github.com/monarc30/Checker.git
+
+## run composer install
 
 ## to test this example code, clone into your system wich provide Symfony 5.4.2
 
-## was created a CheckerTest file in the tests/Util directory for this application:
+## was created a CheckerTest file in the tests/Util directory with following methods for this application:
 
     ###  testisPalindrome
     ###  testisNotPalindrome
