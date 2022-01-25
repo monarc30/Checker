@@ -55,5 +55,14 @@ class Checker
      */    
     public function isPangram(string $phrase) : bool
     {
+        $sentences = strtolower(trim($phrase));
+		$letters = str_split("abcdefghijklmnopqrstuvwxyz");
+
+		foreach ($letters as $letter) {
+			if (!strstr($sentences, $letter))
+				return false;
+		}
+
+		return true;
     }
 }
