@@ -1,6 +1,6 @@
-# Checker
+## Checker
 
-# Instructions and Installation
+## Instructions and Installation
 
 ## git clone https://github.com/monarc30/Checker.git
 
@@ -10,12 +10,12 @@
 
 ## was created a CheckerTest file in the tests/Util directory with following methods for this application:
 
-    ###  testisPalindrome
-    ###  testisNotPalindrome
-    ###  testisAnagram
-    ###  testisNotAnagram
-    ###  isPangram
-    ###  isNotPangram
+    ##  testisPalindrome
+    ##  testisNotPalindrome
+    ##  testisAnagram
+    ##  testisNotAnagram
+    ##  isPangram
+    ##  isNotPangram
 
 
 ## run ./bin/phpunit tests/Util/CheckerTest.php to check all 
