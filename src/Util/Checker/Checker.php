@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Operations\Checker;
+namespace App\Util\Checker;
 
 /**
  * Pangrams, anagrams and palindromes
